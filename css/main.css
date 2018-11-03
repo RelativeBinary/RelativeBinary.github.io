@@ -1,9 +1,23 @@
-body {
+body,
+html {
     background-color: #292828;
     /*color: #3bf59e;*/
     color: white;
+    height: 100%;
+    margin: 0;
 }
 
 a {
     color: white;
+}
+
+.home-top-img {
+    background-image: url('../images/japan_osaka_night_asia_landmark_travel_japanese_architecture.JPEG');
+    /*background-image: url('https://raw.githubusercontent.com/RelativeBinary/RelativeBinary.github.io/master/images/japan_osaka_night_asia_landmark_travel_japanese_architecture.JPEG');*/
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
