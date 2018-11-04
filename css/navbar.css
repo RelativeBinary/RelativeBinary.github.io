@@ -9,3 +9,8 @@
     height: 40px;
     width: 40px;
 }
+
+  .affix {
+      top: 0;
+      background-color:#333333;
+  }
