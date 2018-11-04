@@ -21,3 +21,18 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.sec {
+    height: 75%;
+    background-color: white;
+}
+
+#home-about{
+    height:50%;
+}
+#home-projects{
+    background-color: gray;
+}
+#home-contact{
+    height: 25%;
+}
