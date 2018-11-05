@@ -10,8 +10,26 @@
     width: 40px;
 }
 
-  .affix {
-      top: 0;
-      width: 100%;
-      background-color:#333333;
-  }
+.affix {
+    top: 0;
+    width: 100%;
+    background-color: #333333;
+}
+
+.navbar a,
+.affix {
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+.navbar-brand {
+    padding-left: 15px;
+    padding-right: 15px;
+}

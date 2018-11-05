@@ -13,27 +13,51 @@ a {
 }
 
 .home-top-img {
-    background-image: url('../images/japan_osaka_night_asia_landmark_travel_japanese_architecture.JPEG');
-    /*background-image: url('https://raw.githubusercontent.com/RelativeBinary/RelativeBinary.github.io/master/images/japan_osaka_night_asia_landmark_travel_japanese_architecture.JPEG');*/
-    /* Full height */
+    background-image: url('../images/torigates-japan.jpg');
+    /* Full height and width */
     height: 100%;
+    width: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* Center content */
+    display: table;
+    text-align: center;
 }
+
+
+/* Center content */
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+
+/* *************** */
 
 div.sec {
     height: 75%;
     background-color: white;
 }
 
-#home-about{
-    height:50%;
+#home-about {
+    height: 50%;
+    color: black;
 }
-#home-projects{
-    background-color: gray;
+
+#home-projects {
+    background-color: #333333;
 }
-#home-contact{
+
+#home-contact {
     height: 25%;
+    background-color: #555555;
 }
