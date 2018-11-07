@@ -12,6 +12,10 @@ a {
     color: white;
 }
 
+#blurb>a {
+    color: black;
+}
+
 .home-top-img {
     background-image: url('../images/torigates-japan.jpg');
     /* Full height and width */
@@ -21,13 +25,26 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* Center content */
-    display: table;
-    text-align: center;
+}
+
+.circleImg {
+    border-radius: 50%;
+    height: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
 }
 
 
 /* Center content */
+
+.outer {
+    height: 100%;
+    width: 100%;
+    display: table;
+    text-align: center;
+}
 
 .middle {
     display: table-cell;
@@ -49,6 +66,8 @@ div.sec {
 }
 
 #home-about {
+    padding-top: 40px;
+    padding-bottom: 40px;
     height: 50%;
     color: black;
 }
@@ -60,4 +79,9 @@ div.sec {
 #home-contact {
     height: 25%;
     background-color: #555555;
+}
+
+#blurb {
+    width: 50%;
+    text-align: justify;
 }

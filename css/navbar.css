@@ -8,6 +8,9 @@
 #nav-git-link {
     height: 40px;
     width: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
 }
 
 .affix {
