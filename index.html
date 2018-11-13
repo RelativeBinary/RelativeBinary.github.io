@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/spacing.css" type="text/css">
     <link rel="stylesheet" href="css/fonts.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="css/medias_grids.css" type="text/css">
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/includes/popper.min.js"></script>
@@ -57,13 +57,26 @@
         <div class="outer">
             <div class="middle">
                 <div class="inner">
-                    <div class="container">
-                        <div class="row">
-                            <div><img src="images/mango_face.jpg" class="circleImg"></div>
-                            <div id="blurb">Welcome to my website! I'm currently in my first year studying for a Bachelor's degree in Computer Science at the University of Wollongong. Outside of university I have been completing the freeCodeCamp course on web development
+                    <div class="blurbGrid">
+                        <div><img src="images/mango_face.jpg" class="circleImg"></div>
+                        <div id="mobile-blurb">
+                            <div class="blurb">Welcome to my website! I'm currently in my first year studying for a Bachelor's degree in Computer Science at the University of Wollongong. Outside of university I have been completing the freeCodeCamp course on web development
                                 and programming courses on Udemy, aside from courses I am also pursuing other side projects in my own time (check out my
                                 <a href="https://github.com/RelativeBinary" target="_blank">github</a> and
                                 <a href="https://codepen.io/SpectreMeltdown/" target="_blank">codepen</a>).
+                            </div>
+                        </div>
+                        <div>
+                            <div id="desktop-blurb" class="outer">
+                                <div class="middle">
+                                    <div class="inner">
+                                        <div class="blurb">Welcome to my website! I'm currently in my first year studying for a Bachelor's degree in Computer Science at the University of Wollongong. Outside of university I have been completing the freeCodeCamp course on
+                                            web development and programming courses on Udemy, aside from courses I am also pursuing other side projects in my own time (check out my
+                                            <a href="https://github.com/RelativeBinary" target="_blank">github</a> and
+                                            <a href="https://codepen.io/SpectreMeltdown/" target="_blank">codepen</a>).
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,44 +87,55 @@
 
     <div id="home-projects" class="sec">
         <div class="outer">
-            <div class="middle container">
+            <div class="middle">
                 <div class="inner">
                     <h2 class="subHeader"> T E C N O L O G I E S </h2>
-                    <div class="row">
-                        <div class="col regCard">
-                            <h3>JAVA</h3> 1 year experience
-
-                        </div>
-                        <div class="col regCard">
-                            <h3>WEB</h3> 1 year experience
-
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="col regCard">
-                            <h3>C++</h3>
+                    <div class="infoGrid">
+                        <div>
+                            <h3> TITLE </h3>
                             <p>
-                                Projects with C++ comming soon!
+                                This is a sample block
                             </p>
                         </div>
-                        <div class="col regCard">
-                            <h3></h3>
-
+                        <div>
+                            <h3> TITLE </h3>
+                            <p>
+                                This is a sample block
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infoGrid">
+                        <div>
+                            <h3> TITLE </h3>
+                            <p>
+                                This is a sample block
+                            </p>
+                        </div>
+                        <div>
+                            <h3> TITLE </h3>
+                            <p>
+                                This is a sample block
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="home-contact" class="sec">
-            <div class="outer">
-                <div class="middle">
-                    <div class="inner">C O N T A C T
-                        <div>You can reach me at patrick.bornay@protonmail.com</div>
+    </div>
+    <div id="home-contact" class="">
+        <div class="outer">
+            <div class="middle">
+                <div class="inner">
+                    <div class="flex-cont">
+                        <div class="box">
+                            C O N T A C T
+                            <div>You can reach me at patrick.bornay@protonmail.com</div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
+    </div>
 
 </body>
 

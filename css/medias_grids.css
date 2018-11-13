@@ -1,0 +1,40 @@
+.infoGrid {
+    text-align: center;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 100px;
+    /*fix blank spots:: dense - pack'em like tetris*/
+    grid-auto-flow: dense;
+}
+
+.blurbGrid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: auto;
+}
+
+@media (max-width: 650px) {
+    .blurbGrid {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 200px;
+    }
+    .blurb {
+        max-width: 100%;
+        padding: 20px;
+    }
+    #desktop-blurb {
+        display: none;
+    }
+    #mobile-blurb {
+        display: block;
+    }
+    .circleImg {
+        border-radius: 50%;
+        height: 120px;
+        float: initial;
+    }
+}

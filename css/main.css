@@ -8,6 +8,11 @@ html {
     margin: 0;
 }
 
+
+/*div {
+    border-style: dashed;
+}*/
+
 a {
     color: white;
 }
@@ -31,6 +36,7 @@ img {
 .circleImg {
     border-radius: 50%;
     height: 200px;
+    float: right;
 }
 
 .subHeader {
@@ -66,16 +72,51 @@ img {
 
 /* *************** */
 
+
+/* CONTENT FILL HEIGHT */
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.box .row {
+    border: 1px dotted grey;
+}
+
+.box .row.header {
+    flex: 0 1 auto;
+}
+
+.box .row.content {
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.box .row.footer {
+    flex: 0 1 40px;
+}
+
+
+/* ******************* */
+
 div.sec {
-    height: 75%;
+    min-height: 75%;
     background-color: white;
+    padding-top: 20px;
 }
 
 #home-about {
     padding-top: 40px;
-    padding-bottom: 40px;
-    height: 50%;
+    min-height: 35%;
     color: black;
+}
+
+#mobile-blurb {
+    display: none;
 }
 
 #home-projects {
@@ -83,15 +124,15 @@ div.sec {
 }
 
 #home-contact {
-    height: 25%;
+    height: 15%;
     background-color: #555555;
 }
 
-#blurb {
-    width: 50%;
+.blurb {
+    max-width: 80%;
     text-align: justify;
 }
 
-#blurb>a {
+.blurb>a {
     color: black;
 }
