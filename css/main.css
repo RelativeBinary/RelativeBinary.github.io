@@ -104,7 +104,6 @@ img {
 /* ******************* */
 
 div.sec {
-    min-height: 75%;
     background-color: white;
     padding-top: 20px;
 }
@@ -120,12 +119,12 @@ div.sec {
 }
 
 #home-projects {
-    background-color: #333333;
+    background-color: #525252;
 }
 
 #home-contact {
     height: 15%;
-    background-color: #555555;
+    background-color: #353535;
 }
 
 .blurb {

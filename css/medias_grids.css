@@ -20,7 +20,7 @@
         display: grid;
         grid-gap: 5px;
         grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: 200px;
+        grid-auto-rows: auto;
     }
     .blurb {
         max-width: 100%;
@@ -36,5 +36,8 @@
         border-radius: 50%;
         height: 120px;
         float: initial;
+    }
+    #home-projects {
+        background-color: #333333;
     }
 }
