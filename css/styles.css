@@ -1,0 +1,55 @@
+header {
+    min-height: 100vh;
+    background: url(/images/skyline.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+    .valign-wrapper {
+        justify-content: center;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .valign-wrapper {
+        justify-content: center;
+        padding-top: 40vh;
+    }
+}
+
+.valign-wrapper {
+    display: flex;
+    color: white;
+    text-align: center;
+}
+
+.section {
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.navbar-fixed {
+    position: fixed;
+}
+
+.parallax-container {
+    max-height: 20vh;
+}
+
+.tabs .indicator {
+    background-color: white;
+}
+
+.tabs .tab a:focus,
+.tab .tab a:focus.active {
+    background: transparent;
+}
+
+#project-h2 {
+    padding-bottom: 4vw;
+}

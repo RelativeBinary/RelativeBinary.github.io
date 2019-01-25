@@ -10,14 +10,23 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    <title>Patrick Bonray</title>
+    <!-- Main CSS File-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <title>Patrick Bornay</title>
+
 </head>
 
 <body>
 
     <!-- navbar -->
     <header>
-        <nav class="nav-wrapper black">
+        <nav class="nav-wrapper grey darken-4 navbar-fixed">
             <div class="container">
                 <a href="#" class="brand-logo">Patrick Bonray</a>
                 <a href="" class="sidenav-trigger" data-target="mobile-menu">
@@ -45,22 +54,169 @@
                 </ul>
             </div>
         </nav>
+        <div class="container">
+            <div class="valign-wrapper">
+                <h1>Self-learning Web and Mobile Developer</h1>
+            </div>
+        </div>
     </header>
 
     <!-- projects -->
+    <div class="">
+        <div class="container section scrollspy white-text" id="projects">
+            <h1 class="black-text center-align">PROJECTS</h1>
+            <!-- Each row is project img and description -->
+            <div class="row black-text">
+                <div class="col s12 l6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/reflection.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Project 1</span>
+                            <p>description</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/reflection.jpg" alt="">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Project 1</span>
+                            <p>description</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section class="container section scrollspy" id="projects">
-
-    </section>
-
+        </div>
+    </div>
     <!-- parallax -->
+    <div class="parallax-container">
+        <h1 class="center-align white-text">SKILLS</h1>
 
-    <!-- services / tabs -->
-
-    <!-- parallax -->
+        <div class="parallax scrollspy" id="skills">
+            <img src="images/japanview.jpg" alt="" class="responsive-img">
+        </div>
+    </div>
+    <!-- skills tabs /about -->
+    <div class="grey darken-4 white-text">
+        <section class="contianer section scrollspy">
+            <div class="row container">
+                <div class="col s12 l12">
+                    <ul class="tabs">
+                        <li class="tab col s3">
+                            <a href="#java" class="grey darken-4 white-text">
+                        Java & C++</a>
+                        </li>
+                        <li class="tab col s3">
+                            <a href="#htmlcss" class="grey darken-4 white-text">
+                        HTML & CSS</a>
+                        </li>
+                        <li class="tab col s3">
+                            <a href="#js" class="grey darken-4 white-text">
+                        JavaScript</a>
+                        </li>
+                        <li class="tab col s3">
+                            <a href="#react" class="grey darken-4 white-text">
+                            React</a>
+                        </li>
+                    </ul>
+                    <div class="col s12" id="java">
+                        <p class="flow-text">JAVA & C++</p>
+                        <p>I'm comfortable with OOP & OOD and i've created mobile/desktop apps on andriod using java and c++.
+                        </p>
+                    </div>
+                    <div class="col s12" id="htmlcss">
+                        <p class="flow-text">HTML & CSS</p>
+                        <p>This website. Which has gone through many interations, i've recently redesigned it using materialize CSS.
+                        </p>
+                    </div>
+                    <div class="col s12" id="js">
+                        <p class="flow-text">JAVASCRIPT</p>
+                        <p>
+                            I've learnt native JS and JQuery. I aim to create some cool JS features on my codepen.
+                        </p>
+                    </div>
+                    <div class="col s12" id="react">
+                        <p class="flow-text">REACT</p>
+                        <p>The framwork ill be using to create single page applications, once i finish learning it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- contact form -->
+    <div class="grey darken-3">
+        <section class="section container scrollspy white-text" id="contact">
+            <div class="row">
+                <div class="col s12 l5">
+                    <h2 class="white-text">Get In Touch</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="col s12 l5 offset-l2">
+                    <form action="">
+                        <div class="input-field">
+                            <i class="material-icons prefix">email</i>
+                            <input type="email" id="email">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">message</i>
+                            <textarea class="materialize-textarea" id="message" cols="30" rows="10"></textarea>
+                            <label for="email">Your Message</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="date" class="datepicker">
+                            <label for="date">Choose a date you need me for...</label>
 
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- footer -->
+    <footer class="page-footer grey darken-2 ">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About me</h5>
+                    <p> I'm currently in my second year of my computer science degree but, outside university I've been persuing my own education to really advance my skills and improve constantly. Because I believe education is more than what you'll find
+                        at school.
+                    </p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Linked In</a></li>
+                        <li><a href="" class="grey-text text-lighten-3">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">
+                &copy; 2019 Patrick Bornay
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
