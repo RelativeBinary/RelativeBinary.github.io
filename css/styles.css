@@ -13,6 +13,9 @@ header {
         justify-content: center;
         padding-top: 100px;
     }
+    .brand-logo {
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 670px) {
