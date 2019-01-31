@@ -54,7 +54,7 @@ header {
 }
 
 .tabs .indicator {
-    background-color: transparent;
+    background-color: white;
 }
 
 .tabs .tab a:focus,
