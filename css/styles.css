@@ -32,6 +32,9 @@ header {
         justify-content: center;
         padding-top: 40vh;
     }
+    .card{
+        min-height: 300px;
+    }
 }
 
 .valign-wrapper {
