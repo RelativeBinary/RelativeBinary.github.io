@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import React from 'react';
+import Typist from 'react-typist';
 
 export default function Header() {
   return (
@@ -14,10 +15,15 @@ export default function Header() {
           textAlign: 'left',
         }}
       >
-        Hi, I'm <Button style={{ fontSize: '100%' }}> Patrick Bornay. </Button>
+        <Typist>
+          Hi, I'm{' '}
+          <Button style={{ fontSize: '100%' }}> Patrick Bornay. </Button>
+        </Typist>
         <br />
         <span style={{ fontSize: '200%' }}>
-          A web dev & cyber security enthusiast
+          <Typist>
+            <Typist.Delay ms={2000} />A web dev & cyber security enthusiast 😄
+          </Typist>
         </span>
       </div>
     </div>
