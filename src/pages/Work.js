@@ -9,8 +9,8 @@ export default function Work() {
   return (
     <div>
       <Header />
-      <Projects />
-      <Footer />
+      {/* <Projects /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

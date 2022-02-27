@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
+import ThemeContextWrapper from './contexts/ThemeContextWrapper';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeContextWrapper>
+        <App />
+      </ThemeContextWrapper>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
