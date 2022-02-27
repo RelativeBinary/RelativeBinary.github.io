@@ -11,7 +11,7 @@ import ThemeContextWrapper from '../contexts/ThemeContextWrapper';
 export default function ProjectItem() {
   return (
     <>
-      <Card sx={{ minWidth: 275, maxWidth: 275 }}>
+      <Card sx={{ minWidth: 275, maxWidth: 275 }} className='project-item'>
         <CardContent>
           <Typography sx={{ fontSize: 14 }} gutterBottom>
             Word of the Day

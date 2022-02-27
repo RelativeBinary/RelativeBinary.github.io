@@ -9,7 +9,7 @@ export default function Work() {
   return (
     <div>
       <Header />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Footer /> */}
     </div>
   );

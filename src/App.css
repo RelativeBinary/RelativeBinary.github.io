@@ -18,10 +18,22 @@ code {
   background: #e4e4e4;
   color: #282c34;
 }
+
+.white-content .project-item {
+  background: #7bdfc1;
+  color: #282c34;
+}
+
 .dark-content {
   background: #282c34;
   color: #e4e4e4;
 }
+
+.dark-content .project-item {
+  background: #424957;
+  color: #e4e4e4;
+}
+
 /* end */
 
 /* Typist cursor controls */
