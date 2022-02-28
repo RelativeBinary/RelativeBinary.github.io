@@ -12,6 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* end */
 
 /* Theme controls */
 .white-content {
@@ -19,21 +20,46 @@ code {
   color: #282c34;
 }
 
-.white-content .project-item {
-  background: #7bdfc1;
-  color: #282c34;
-}
-
 .dark-content {
   background: #282c34;
   color: #e4e4e4;
+}
+/* end */
+
+/* Project controls */
+.white-content .project-item {
+  background: #7bdfc1;
+  color: #282c34;
 }
 
 .dark-content .project-item {
   background: #424957;
   color: #e4e4e4;
 }
+/* end */
 
+/* Navbar & Route controls */
+.white-content .navbar {
+  background: #7bdfc1;
+  color: #282c34;
+}
+
+.dark-content .navbar {
+  background: #424957;
+  color: #e4e4e4;
+}
+
+.nav-flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
 /* end */
 
 /* Typist cursor controls */

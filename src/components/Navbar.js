@@ -1,16 +1,20 @@
 import React from 'react';
-import { AppBar, Toolbar, CssBaseline } from '@material-ui/core';
+import { AppBar, Box, Toolbar, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <AppBar position='static'>
-      <CssBaseline />
+    <AppBar position='static' className='navbar'>
       <Toolbar>
-        <div>
-          <Link to='/'>Work</Link>
+        <Box sx={{ flexGrow: 1 }} />
+        <Typography>
+          <Link to='/' className='nav-link'>
+            Work
+          </Link>
+        </Typography>
+        <Typography>
           <Link to='/about'>About</Link>
-        </div>
+        </Typography>
       </Toolbar>
     </AppBar>
   );
