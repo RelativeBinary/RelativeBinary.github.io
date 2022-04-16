@@ -33,13 +33,23 @@ body, * {
 }
 /* end */
 
-/* Project controls */
-.white-content .project-item {
+/* Projects controls */
+.Projects {
+
+}
+
+.ProjectItem {
+ 
+}
+/* end */
+
+/* ProjectItem controls */
+.white-content .ProjectItem {
   background: var(--light-secondary);
   color: var(--light-color);
 }
 
-.dark-content .project-item {
+.dark-content .ProjectItem {
   background: var(--dark-secondary);
   color: var(--dark-color);
 }
