@@ -10,7 +10,7 @@ export default function Header() {
       <div>
         <Typist>
           Hi, I'm
-          <Button> Patrick Bornay. </Button>
+          <Button className="Button"> Patrick Bornay. </Button>
         </Typist>
         <span>
           <Typist>
@@ -18,18 +18,6 @@ export default function Header() {
           </Typist>
         </span>
       </div>
-      <ThemeContext.Consumer>
-        {({ changeTheme }) => (
-          <Button
-            onClick={() => {
-              setDarkMode(!darkMode);
-              changeTheme(darkMode ? themes.light : themes.dark);
-            }}
-          >
-            Toggle
-          </Button>
-        )}
-      </ThemeContext.Consumer>
     </>
   );
 }
