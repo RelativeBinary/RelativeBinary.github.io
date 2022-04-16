@@ -8,7 +8,7 @@ import {
 } from '@mui/material';
 import ThemeContextWrapper from '../contexts/ThemeContextWrapper';
 
-export default function ProjectItem() {
+export default function ProjectItem(props) {
   return (
     <>
       <Card sx={{ minWidth: 275, maxWidth: 275 }} className='project-item'>
