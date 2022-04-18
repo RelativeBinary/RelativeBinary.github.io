@@ -6,11 +6,14 @@ import {
   CardActions,
   Button,
 } from '@mui/material';
-import ThemeContextWrapper from '../contexts/ThemeContextWrapper';
 
 export default function ProjectItem(props) {
   return (
-      <Card sx={{ minWidth: 275, maxWidth: 275 }} className='ProjectItem'>
+    <div className='ProjectItem'>
+      <Card
+        sx={{ midWidth: 475, maxWidth: 475, margin: 'auto' }}
+        className='ProjectCard'
+      >
         <CardContent>
           <Typography sx={{ fontSize: 14 }} gutterBottom>
             Word of the Day
@@ -29,5 +32,6 @@ export default function ProjectItem(props) {
           <Button size='small'>Learn More</Button>
         </CardActions>
       </Card>
+    </div>
   );
 }

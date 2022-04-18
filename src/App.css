@@ -1,10 +1,11 @@
 /* General controls */
 :root {
-  --font: -apple-system, BlinkMacSystemFont, 'Roboto Mono', monospace, sans-serif;
-  --font-size: 16px; 
+  --font: -apple-system, BlinkMacSystemFont, 'Roboto Mono', monospace,
+    sans-serif;
+  --font-size: 16px;
   --light-color: #282c34;
   --light-bg: #e4e4e4;
-  --light-nav: #7bdfc1; 
+  --light-nav: #7bdfc1;
   --light-secondary: #7bdfc1;
   --dark-color: #e4e4e4;
   --dark-bg: #282c34;
@@ -12,9 +13,10 @@
   --dark-secondary: #4a4a4a;
 }
 
-body, * {
+body,
+* {
   margin: 0;
-  font-family: var(--font) !important; 
+  font-family: var(--font) !important;
   font-size: var(--font-size);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,33 +37,37 @@ body, * {
 
 /* Projects controls */
 .Projects {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ProjectItem {
- 
+  width: 50%;
+  box-sizing: border-box;
 }
 /* end */
 
 /* ProjectItem controls */
-.white-content .ProjectItem {
+.white-content .ProjectCard {
   background: var(--light-secondary);
   color: var(--light-color);
 }
 
-.dark-content .ProjectItem {
+.dark-content .ProjectCard {
   background: var(--dark-secondary);
   color: var(--dark-color);
 }
 /* end */
 
 /* Navbar & Route controls */
-.white-content .navbar, .white-content a {
+.white-content .navbar,
+.white-content a {
   background: var(--light-nav);
   color: var(--light-color);
 }
 
-.dark-content .navbar, .dark-content a {
+.dark-content .navbar,
+.dark-content a {
   background: var(--dark-nav);
   color: var(--dark-color);
 }
@@ -80,13 +86,13 @@ body, * {
 
 /* Button controls */
 .white-content .Button {
-  color: var(--light-color) !important; 
+  color: var(--light-color) !important;
   text-transform: none !important;
   font-size: var(--font-size) !important;
 }
 
 .dark-content .Button {
-  color: var(--dark-color) !important; 
+  color: var(--dark-color) !important;
   text-transform: none !important;
   font-size: var(--font-size) !important;
 }
