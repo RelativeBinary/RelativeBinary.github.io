@@ -51,6 +51,12 @@ body,
 .Projects {
   display: flex;
   flex-wrap: wrap;
+  margin: 10px;
+  
+}
+.ProjectsHeader {
+  
+  text-align: center;
 }
 
 .ProjectItem {

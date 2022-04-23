@@ -5,8 +5,10 @@ import ProjectData from '../data/ProjectData.json';
 export default function Projects() {
   return (
     <>
+    <div className="ProjectsHeader">
       <h3>Projects.</h3>
       These are my projects
+    </div>
       <div className='Projects'>
         {ProjectData.map((it) => (
           <ProjectItem
