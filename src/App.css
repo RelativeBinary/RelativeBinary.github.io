@@ -23,6 +23,18 @@ body,
 }
 /* end */
 
+/* Header controls */
+.Header {
+  min-height: 80vh;
+
+}
+.HeaderContent {
+  width: fit-content;
+  padding-top: 20%;
+  margin: auto !important;
+}
+/* end */
+
 /* Theme controls */
 .white-content {
   background: var(--light-bg) !important;
@@ -119,3 +131,5 @@ body,
   }
 }
 /* end */
+
+
