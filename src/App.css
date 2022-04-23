@@ -3,10 +3,10 @@
   --font: -apple-system, BlinkMacSystemFont, 'Roboto Mono', monospace,
     sans-serif;
   --font-size: 16px;
-  --light-color: #282c34;
-  --light-bg: #e4e4e4;
-  --light-nav: #7bdfc1;
-  --light-secondary: #7bdfc1;
+  --light-color: #4a4d4e;
+  --light-bg: #dcdcdc;
+  --light-nav: #e4e4e4;
+  --light-secondary: #e4e4e4;
   --dark-color: #e4e4e4;
   --dark-bg: #282c34;
   --dark-nav: #4a4d4e;

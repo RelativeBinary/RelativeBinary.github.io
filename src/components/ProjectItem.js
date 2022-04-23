@@ -5,9 +5,11 @@ import {
   Typography,
   CardActions,
   Button,
+  CardMedia,
 } from '@mui/material';
 
-export default function ProjectItem(props) {
+export default function ProjectItem({name, body, image, link}) {
+
   return (
     <div className='ProjectItem'>
       <Card
@@ -15,18 +17,19 @@ export default function ProjectItem(props) {
         className='ProjectCard'
       >
         <CardContent>
-          <Typography sx={{ fontSize: 14 }} gutterBottom>
-            Word of the Day
+          <Typography variant='body2' gutterBottom>
+            01:{name}
           </Typography>
-          <Typography variant='h5' component='div'>
-            benevolent
+          <Typography variant='p' component='div'>
+            {body}
           </Typography>
-          <Typography sx={{ mb: 1.5 }}>adjective</Typography>
-          <Typography variant='body2'>
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
-          </Typography>
+          <CardMedia 
+            className='ProjectItemImage'
+            component="img"
+            image={image} 
+            height="194" 
+            alt="project-image"
+          />
         </CardContent>
         <CardActions>
           <Button size='small'>Learn More</Button>
