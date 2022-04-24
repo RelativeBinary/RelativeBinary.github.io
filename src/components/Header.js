@@ -7,8 +7,7 @@ export default function Header() {
   return (
     <div className="Header">
       <Typist className="HeaderContent">
-        Hi, I'm
-        <Button className="Button"> Patrick Bornay. </Button> <br/>
+        Hi, I'm Patrick Bornay. <br/>
         <Typist.Delay ms={2000} />A web dev & cyber security enthusiast 😄
       </Typist>
     </div>
