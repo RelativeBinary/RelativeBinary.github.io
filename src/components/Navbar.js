@@ -1,9 +1,10 @@
 import React from 'react';
-import { AppBar, Box, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Box, Grow, Toolbar, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
 import { Button } from '@mui/material';
 import '../App.css';
+import BasicGrow from './animation/BasicGrow';
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = React.useState(true);
@@ -17,26 +18,33 @@ export default function Navbar() {
       */}
       <ThemeContext.Consumer>
         {({ changeTheme }) => (
-          <Button
-            className="Button"
-            onClick={() => {
-              setDarkMode(!darkMode);
-              changeTheme(darkMode ? themes.light : themes.dark);
-            }}
-          >
-            Toggle Theme
-          </Button>
+          <BasicGrow delay={3000}>
+            <Button
+              className="Button"
+              onClick={() => {
+                setDarkMode(!darkMode);
+                changeTheme(darkMode ? themes.light : themes.dark);
+              }}
+            >
+              Toggle Theme
+            </Button>
+          </BasicGrow>
         )}
       </ThemeContext.Consumer>
         <Box sx={{ flexGrow: 1 }} />
-        <Typography>
+        <BasicGrow delay={500}>
+          <Typography>
           <Link to='/' className='nav-link'>
             Work
           </Link>
         </Typography>
-        <Typography>
-          <Link to='/about'>About</Link>
-        </Typography>
+        </BasicGrow>
+        <BasicGrow>
+          <Typography>
+            <Link to='/about'>About</Link>
+          </Typography>
+        </BasicGrow>
+        
       </Toolbar>
     </AppBar>
   );
