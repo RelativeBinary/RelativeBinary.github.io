@@ -8,8 +8,7 @@ import {
   CardMedia,
 } from '@mui/material';
 
-export default function ProjectItem({name, body, image, link}) {
-
+export default function ProjectItem({number, name, body, image, link}) {
   return (
     <div className='ProjectItem'>
       <Card
@@ -18,11 +17,12 @@ export default function ProjectItem({name, body, image, link}) {
       >
         <CardContent>
           <Typography variant='body2' gutterBottom>
-            01:{name}
+            {number < 10 ? "0"+number : number} : {name}
           </Typography>
           <Typography variant='p' component='div'>
             {body}
           </Typography>
+          <br/>
           <CardMedia 
             className='ProjectItemImage'
             component="img"

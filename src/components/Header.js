@@ -2,9 +2,11 @@ import { Button } from '@mui/material';
 import React from 'react';
 import Typist from 'react-typist';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
+import BasicGrow from './animation/BasicGrow';
 
 export default function Header() {
   return (
+  
     <div className="Header">
       <Typist className="HeaderContent">
         Hi, I'm Patrick Bornay. <br/>

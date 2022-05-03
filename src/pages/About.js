@@ -14,6 +14,7 @@ export default function About() {
       </p>
 
       <h3>Skills</h3>
+      would be cool if these were on some scolling LED ticker tape 
       <li>ReactJS</li>
       <li>Typescript</li>
       <li>Javascript</li>

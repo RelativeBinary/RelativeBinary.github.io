@@ -14,8 +14,9 @@ export default function Projects() {
     </BasicGrow>
     
       <div className='Projects'>
-        {ProjectData.map((it) => (
+        {ProjectData.map((it, index) => (
           <ProjectItem
+            number={index}
             name={it.name}
             body={it.body}
             image={it.image}

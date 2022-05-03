@@ -26,12 +26,13 @@ body,
 /* Header controls */
 .Header {
   min-height: 80vh;
-
+  border-bottom: 5px dashed #acacac;
 }
 .HeaderContent {
   width: fit-content;
   padding-top: 20%;
   margin: auto !important;
+  font-size: x-large;
 }
 /* end */
 
@@ -58,6 +59,7 @@ body,
 }
 .ProjectsHeader {
   text-align: center;
+  padding-top: 20px;
 }
 
 .ProjectItem {
@@ -121,6 +123,7 @@ body,
 /* Typist cursor controls */
 .Typist .Cursor {
   display: inline-block;
+  font-size: x-large;
 }
 .Typist .Cursor--blinking {
   opacity: 1;
