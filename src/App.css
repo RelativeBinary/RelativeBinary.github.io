@@ -1,4 +1,5 @@
-/* General controls */
+/* General
+======================== */
 :root {
   --font: -apple-system, BlinkMacSystemFont, 'Roboto Mono', monospace,
     sans-serif;
@@ -21,9 +22,9 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* end */
 
-/* Header controls */
+/* Header controls
+============================== */
 .Header {
   min-height: 80vh;
   border-bottom: 5px dashed #acacac;
@@ -34,9 +35,9 @@ body,
   margin: auto !important;
   font-size: x-large;
 }
-/* end */
 
-/* Theme controls */
+/* Theme controls
+=============================== */
 .white-content {
   background: var(--light-bg) !important;
   color: var(--light-color) !important;
@@ -46,9 +47,9 @@ body,
   background: var(--dark-bg);
   color: var(--dark-color);
 }
-/* end */
 
-/* Projects controls */
+/* Projects controls
+=============================== */
 .Projects {
   display: flex;
   flex-wrap: wrap;
@@ -67,9 +68,9 @@ body,
   padding: 10px;
   box-sizing: border-box;
 }
-/* end */
 
-/* ProjectItem controls */
+/* ProjectItem controls
+=============================== */
 .white-content .ProjectCard {
   background: var(--light-secondary);
   color: var(--light-color);
@@ -79,9 +80,9 @@ body,
   background: var(--dark-secondary);
   color: var(--dark-color);
 }
-/* end */
 
-/* Navbar & Route controls */
+/* Navbar & Route controls
+=============================== */
 .white-content .navbar,
 .white-content a {
   background: var(--light-nav);
@@ -104,9 +105,9 @@ body,
   text-decoration: none;
   margin-left: 10px;
 }
-/* end */
 
-/* Button controls */
+/* Button controls
+=============================== */
 .white-content .Button {
   color: var(--light-color) !important;
   text-transform: none !important;
@@ -118,9 +119,9 @@ body,
   text-transform: none !important;
   font-size: var(--font-size) !important;
 }
-/* end */
 
-/* Typist cursor controls */
+/* Typist cursor controls\
+=============================== */
 .Typist .Cursor {
   display: inline-block;
   font-size: x-large;
@@ -141,6 +142,3 @@ body,
     opacity: 1;
   }
 }
-/* end */
-
-
