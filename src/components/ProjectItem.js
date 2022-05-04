@@ -17,22 +17,24 @@ export default function ProjectItem({number, name, body, image, link}) {
       >
         <CardContent>
           <Typography variant='body2' gutterBottom>
-            {number < 10 ? "0"+number : number} : {name}
+            {number < 10 ? '0' + number : number} : {name}
           </Typography>
           <Typography variant='p' component='div'>
             {body}
           </Typography>
-          <br/>
-          <CardMedia 
+          <br />
+          <CardMedia
             className='ProjectItemImage'
-            component="img"
-            image={image} 
-            height="194" 
-            alt="project-image"
+            component='img'
+            image={image}
+            height='194'
+            alt='project-image'
           />
         </CardContent>
         <CardActions>
-          <Button size='small'>Learn More</Button>
+          <Button size='small' href={link}>
+            Learn More
+          </Button>
         </CardActions>
       </Card>
     </div>

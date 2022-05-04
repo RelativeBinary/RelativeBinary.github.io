@@ -1,8 +1,8 @@
 [{
     "name": "This site!",
     "body": "Something I started back in uni, but have been continuously tweaking and redesigning. Currently this site is built with reactjs and material UI",
-    "image": "react-mui.png",
-    "link": "patrickbornay.com"
+    "image": "https://github.com/RelativeBinary/RelativeBinary.github.io/blob/rework/src/images/react-mui.png?raw=true",
+    "link": "https://patrickbornay.com/"
   }, {
     "name": "Ntags",
     "body": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
