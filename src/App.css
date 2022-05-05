@@ -1,8 +1,11 @@
 /* General
 ======================== */
 :root {
-  --font: -apple-system, BlinkMacSystemFont, 'Roboto Mono', monospace,
-    sans-serif;
+  font-family: “Playfair Display”,
+  “Didot”,
+  "Times New Roman",
+  Times,
+  serif;
   --font-size: 16px;
   --light-color: #4a4d4e;
   --light-bg: #dcdcdc;
@@ -62,8 +65,9 @@ body,
 }
 .HeaderContent {
   width: fit-content;
-  padding-top: 20%;
-  margin: auto !important;
+  padding-top: 3%;
+  padding-left: 3%;
+  margin-bottom: auto !important;
   font-size: x-large;
 }
 
@@ -116,13 +120,11 @@ body,
 =============================== */
 .white-content .navbar,
 .white-content a {
-  background: var(--light-nav);
   color: var(--light-color);
 }
 
 .dark-content .navbar,
 .dark-content a {
-  background: var(--dark-nav);
   color: var(--dark-color);
 }
 
@@ -137,15 +139,21 @@ body,
   margin-left: 10px;
 }
 
+.navbar {
+  position: absolute;
+  bottom: 15%;
+  left: 3%
+}
+
 /* Button controls
 =============================== */
-.white-content .Button {
+.white-content .button {
   color: var(--light-color) !important;
   text-transform: none !important;
   font-size: var(--font-size) !important;
 }
 
-.dark-content .Button {
+.dark-content .button {
   color: var(--dark-color) !important;
   text-transform: none !important;
   font-size: var(--font-size) !important;

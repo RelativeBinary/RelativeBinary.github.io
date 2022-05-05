@@ -9,43 +9,40 @@ import BasicGrow from './animation/BasicGrow';
 export default function Navbar() {
   const [darkMode, setDarkMode] = React.useState(true);
   return (
-    <AppBar position='static' className='navbar'>
-      <Toolbar>
-        {/* 
+    <div className='navbar'>
+      {/* 
         As a memory refresher what were doing here is creating a context consumer
         which will access a function 'changeTheme' inside context. This component
         also is able to access the context's theme.
       */}
       <ThemeContext.Consumer>
         {({ changeTheme }) => (
-          <BasicGrow delay={3000}>
+          <BasicGrow delay={10000}>
             <Button
-              className="Button"
+              className='button'
               onClick={() => {
                 setDarkMode(!darkMode);
                 changeTheme(darkMode ? themes.light : themes.dark);
               }}
             >
-              Toggle Theme
+              Toggle
             </Button>
           </BasicGrow>
         )}
       </ThemeContext.Consumer>
-        <Box sx={{ flexGrow: 1 }} />
-        <BasicGrow delay={500}>
-          <Typography>
+      <Box sx={{ flexGrow: 1 }} />
+      <BasicGrow delay={10500}>
+        <Typography>
           <Link to='/' className='nav-link'>
             Work
           </Link>
         </Typography>
-        </BasicGrow>
-        <BasicGrow>
-          <Typography>
-            <Link to='/about'>About</Link>
-          </Typography>
-        </BasicGrow>
-        
-      </Toolbar>
-    </AppBar>
+      </BasicGrow>
+      <BasicGrow delay={11000}>
+        <Typography>
+          <Link to='/about'>About</Link>
+        </Typography>
+      </BasicGrow>
+    </div>
   );
 }

@@ -2,8 +2,8 @@ import { Button } from '@mui/material';
 import React from 'react';
 import { useState } from 'react';
 import Typist from 'react-typist';
+import Navbar from '../components/Navbar';
 import { ThemeContext, themes } from '../contexts/ThemeContext';
-import BasicGrow from './animation/BasicGrow';
 
 export default function Header() {
   const [MousePosition, setMousePosition] = useState({
@@ -28,8 +28,10 @@ export default function Header() {
       ></div>
       <Typist className='HeaderContent'>
         Hi, I'm Patrick Bornay. <br />
-        <Typist.Delay ms={2000} />A web dev & digital art enthusiast 😄
+        <Typist.Delay ms={2000} />A web dev & digital art enthusiast.
       </Typist>
+
+      <Navbar/>
     </div>
   );
 }
