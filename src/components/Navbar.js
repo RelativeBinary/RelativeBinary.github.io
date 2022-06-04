@@ -34,7 +34,7 @@ export default function Navbar() {
       <BasicGrow delay={10500}>
         <Typography>
           <Link to='/' className='nav-link'>
-            Work
+            Home
           </Link>
         </Typography>
       </BasicGrow>

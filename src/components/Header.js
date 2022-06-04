@@ -1,20 +1,18 @@
-import { Button } from '@mui/material';
 import React from 'react';
 import { useState } from 'react';
 import Typist from 'react-typist';
 import Navbar from '../components/Navbar';
-import { ThemeContext, themes } from '../contexts/ThemeContext';
 
 export default function Header() {
   const [MousePosition, setMousePosition] = useState({
     left: -100,
-    top: -100
-  })
+    top: -100,
+  });
 
-  const handleMouseMove = (ev) => { 
-    setMousePosition({left: ev.pageX, top: ev.pageY})
-    // console.log(MousePosition.left, MousePosition.top)
-  }
+  const handleMouseMove = (ev) => {
+    setMousePosition({ left: ev.pageX, top: ev.pageY });
+    console.log(MousePosition.left, MousePosition.top)
+  };
 
   return (
     <div onMouseMove={(ev) => handleMouseMove(ev)} className='Header'>
@@ -31,7 +29,9 @@ export default function Header() {
         <Typist.Delay ms={2000} />A web dev & digital art enthusiast.
       </Typist>
 
-      <Navbar/>
+      <Navbar />
+      <div id="canvas-container"></div>
+      <script src='js/useThreeJS'></script>
     </div>
   );
 }

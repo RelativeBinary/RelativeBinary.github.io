@@ -15,10 +15,15 @@
   --dark-bg: #000000;
   --dark-nav: #2b2b2b;
   --dark-secondary: #2b2b2b;
-  --cursor-primary: rgb(255, 108, 40);
-  --cursor-secondary: rgb(255, 165, 80);
-  --cursor-pulse-in: 0px 0px 7px 7px;
-  --cursor-pulse-out: 0px 0px 10px 10px;
+  --cursor-primary: rgba(255, 211, 191, 0.925);
+  --cursor-secondary: rgba(255, 161, 73, 0.445);
+  --cursor-third: rgb(255, 108, 40, 0.28);
+  --cursor-pulse-in-inner: 0px 0px 3px 3px;
+  --cursor-pulse-out-inner: 0px 0px 5px 5px;
+  --cursor-pulse-in-mid:0px 0px 15px 15px;
+  --cursor-pulse-out-mid:0px 0px 18px 18px;
+  --cursor-pulse-in-outer:0px 0px 65px 35px;
+  --cursor-pulse-out-outer:0px 0px 80px 50px;
 }
 
 body,
@@ -31,17 +36,29 @@ body,
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Cursor
+============================== */
+
 @keyframes pulse {
   0% {
-    box-shadow: var(--cursor-pulse-in) var(--cursor-primary), inset var(--cursor-pulse-in) var(--cursor-primary);
+    box-shadow: 
+    var(--cursor-pulse-in-inner) var(--cursor-primary), 
+    var(--cursor-pulse-in-mid) var(--cursor-secondary),
+    var(--cursor-pulse-in-outer) var(--cursor-third);
   }
 
   50% {
-    box-shadow: var(--cursor-pulse-out) var(--cursor-primary), inset var(--cursor-pulse-out) var(--cursor-primary);
+    box-shadow: 
+    var(--cursor-pulse-out-inner) var(--cursor-primary),
+    var(--cursor-pulse-out-mid) var(--cursor-secondary),
+    var(--cursor-pulse-out-outer) var(--cursor-third);
   }
 
   100% {
-    box-shadow: var(--cursor-pulse-in) var(--cursor-primary), inset var(--cursor-pulse-in) var(--cursor-primary);
+    box-shadow: 
+    var(--cursor-pulse-in-inner) var(--cursor-primary),
+    var(--cursor-pulse-in-mid) var(--cursor-secondary),
+    var(--cursor-pulse-in-outer) var(--cursor-third);
   }
 }
 
@@ -49,7 +66,7 @@ body,
   pointer-events: none;
   width: 8px;
   height: 8px;
-  background-color: var(--cursor-secondary);
+  background-color: rgb(255, 210, 168);
   border-radius:100px;
   box-shadow: 0px 0px 10px 10px var(--cursor-primary), inset 0 0 8px var(--cursor-primary);
   animation: pulse 2s linear 1s infinite;
