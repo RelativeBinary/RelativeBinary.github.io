@@ -25,10 +25,9 @@ export default function Header() {
         }}
       ></div>
       <Typist className='HeaderContent'>
-        Hi, I'm Patrick Bornay. <br />
+        Ahoy There! I'm Patrick. <br />
         <Typist.Delay ms={2000} />A web dev & digital art enthusiast.
       </Typist>
-
       <Navbar />
       <div id="canvas-container"></div>
       <script src='js/useThreeJS'></script>
