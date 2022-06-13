@@ -1,13 +1,11 @@
 import React from 'react';
-import { AppBar, Box, Grow, Toolbar, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import { ThemeContext, themes } from '../contexts/ThemeContext';
-import { Button } from '@mui/material';
 import '../App.css';
 import BasicGrow from './animation/BasicGrow';
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = React.useState(true);
+  // const [darkMode, setDarkMode] = React.useState(true);
   return (
     <div className='navbar'>
       {/* 
