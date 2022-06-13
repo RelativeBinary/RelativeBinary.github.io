@@ -15,7 +15,7 @@ export default function Navbar() {
         which will access a function 'changeTheme' inside context. This component
         also is able to access the context's theme.
       */}
-      <ThemeContext.Consumer>
+      {/* <ThemeContext.Consumer>
         {({ changeTheme }) => (
           <BasicGrow delay={10000}>
             <Button
@@ -29,8 +29,7 @@ export default function Navbar() {
             </Button>
           </BasicGrow>
         )}
-      </ThemeContext.Consumer>
-      <Box sx={{ flexGrow: 1 }} />
+      </ThemeContext.Consumer> */}
       <BasicGrow delay={10500}>
         <Typography>
           <Link to='/' className='nav-link'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Header from '../components/Header';
-import Navbar from '../components/Navbar';
+import NavButton from '../components/NavButton';
 
 export default function Home() {
   const [MousePosition, setMousePosition] = useState({
@@ -25,8 +25,9 @@ export default function Home() {
         }}
       ></div>
       <Header />
-      <Navbar />
-      {/* <Footer /> */}
+      <div className='navbar'>
+       <NavButton name={'Home'}/> 
+      </div>
     </div>
   );
 }

@@ -1,9 +1,29 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import Footer from '../components/Footer';
+import NavButton from '../components/NavButton';
+import { useState } from 'react';
+
 export default function About() {
+   const [MousePosition, setMousePosition] = useState({
+     left: -100,
+     top: -100,
+   });
+
+   const handleMouseMove = (ev) => {
+     setMousePosition({ left: ev.pageX, top: ev.pageY });
+     console.log(MousePosition.left, MousePosition.top);
+   };
+
   return (
-    <>
+    <div onMouseMove={(ev) => handleMouseMove(ev)}>
+      <div
+        className='cursor'
+        style={{
+          position: 'absolute',
+          left: `${MousePosition.left}px`,
+          top: `${MousePosition.top}px`,
+        }}
+      ></div>
       <h1>About me</h1>
       <p>
         Hello! I'm currently a web developer working for Finocomp. I received a
@@ -25,7 +45,7 @@ export default function About() {
       <li>Spock Testing</li>
       <li>Kubernetes</li>
       <Button>Resume</Button>
-      <Footer />
-    </>
+      <NavButton name={'Home'} />
+    </div>
   );
 }

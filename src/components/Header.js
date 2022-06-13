@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className='Header'>
       <Typist className='HeaderContent'>
-        Ahoy There! I'm Patrick. <br />
+        Hi! I'm Patrick. <br />
         <Typist.Delay ms={2000} />A web dev & digital art enthusiast.
       </Typist>
 
