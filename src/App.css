@@ -127,7 +127,7 @@ body,
 .navbar {
   position: absolute;
   z-index: 5;
-  bottom: 15%;
+  bottom: 1%;
   left: 0%
 }
 
