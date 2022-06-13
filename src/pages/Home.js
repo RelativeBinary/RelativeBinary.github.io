@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <div onMouseMove={(ev) => handleMouseMove(ev)} className='Header'>
+    <div onMouseMove={(ev) => handleMouseMove(ev)} className='body'>
       <div
         className='cursor'
         style={{
@@ -26,7 +26,9 @@ export default function Home() {
       ></div>
       <Header />
       <div className='navbar'>
-       <NavButton name={'Home'}/> 
+       <NavButton name={'Home'} destination={'/'} active={true}/> 
+       <NavButton name={'Works'} destination={'/works'}/> 
+       <NavButton name={'About'} destination={'/about'}/> 
       </div>
     </div>
   );

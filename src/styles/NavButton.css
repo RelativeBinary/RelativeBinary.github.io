@@ -55,12 +55,12 @@
 
 .wrapper {
   width: auto;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .selected {
   height: auto;
-  width: 40vw;
+  min-width: 30vw;
   background: linear-gradient(90deg, rgba(0, 102, 255, 1) 0%, rgba(0, 0, 0, 0) 45%);
   /* this ratio should be dynamic for screen sizes*/
   animation: pulse-link 4s ease infinite;

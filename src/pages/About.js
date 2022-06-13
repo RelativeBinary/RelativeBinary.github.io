@@ -15,7 +15,7 @@ export default function About() {
    };
 
   return (
-    <div onMouseMove={(ev) => handleMouseMove(ev)}>
+    <div onMouseMove={(ev) => handleMouseMove(ev)} className='body'>
       <div
         className='cursor'
         style={{
@@ -45,7 +45,11 @@ export default function About() {
       <li>Spock Testing</li>
       <li>Kubernetes</li>
       <Button>Resume</Button>
-      <NavButton name={'Home'} />
+      <div className='navbar'>
+        <NavButton name={'Home'} destination={'/'} />
+        <NavButton name={'Works'} destination={'/'} />
+        <NavButton name={'About'} destination={'/'} active={true} />
+      </div>
     </div>
   );
 }
