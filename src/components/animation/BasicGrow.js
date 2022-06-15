@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Box, Grow, Toolbar, Typography } from '@material-ui/core';
+import { Grow } from '@material-ui/core';
 
 export default function BasicGrow({children, delay}) {
   return (
