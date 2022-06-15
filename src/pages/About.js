@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@mui/material';
 import NavButton from '../components/NavButton';
 import { useState } from 'react';
+import FadeIn from '../components/animation/FadeIn';
 
 export default function About() {
    const [MousePosition, setMousePosition] = useState({
@@ -16,14 +17,16 @@ export default function About() {
 
   return (
     <div onMouseMove={(ev) => handleMouseMove(ev)} className='body'>
-      <div
-        className='cursor'
-        style={{
-          position: 'absolute',
-          left: `${MousePosition.left}px`,
-          top: `${MousePosition.top}px`,
-        }}
-      ></div>
+      <FadeIn>
+        <div
+          className='cursor'
+          style={{
+            position: 'absolute',
+            left: `${MousePosition.left}px`,
+            top: `${MousePosition.top}px`,
+          }}
+        ></div> 
+      </FadeIn>
       <h1>About me</h1>
       <p>
         Hello! I'm currently a web developer working for Finocomp. I received a

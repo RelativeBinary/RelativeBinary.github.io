@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import FadeIn from '../components/animation/FadeIn';
 import Header from '../components/Header';
 import NavButton from '../components/NavButton';
 
@@ -16,14 +17,16 @@ export default function Home() {
 
   return (
     <div onMouseMove={(ev) => handleMouseMove(ev)} className='body'>
-      <div
-        className='cursor'
-        style={{
-          position: 'absolute',
-          left: `${MousePosition.left}px`,
-          top: `${MousePosition.top}px`,
-        }}
-      ></div>
+      <FadeIn>
+        <div
+          className='cursor'
+          style={{
+            position: 'absolute',
+            left: `${MousePosition.left}px`,
+            top: `${MousePosition.top}px`,
+          }}
+        ></div> 
+      </FadeIn>
       <Header />
       <div className='navbar'>
        <NavButton name={'Home'} destination={'/'} active={true}/> 
