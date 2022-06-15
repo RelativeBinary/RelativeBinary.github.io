@@ -71,6 +71,7 @@ body,
   box-shadow: 0px 0px 10px 10px var(--cursor-primary), inset 0 0 8px var(--cursor-primary);
   animation: pulse 2s linear 1s infinite;
   -webkit-animation: pulse 2s linear 1s infinite;
+  z-index: 10;
 }
 
 /* Body controls
@@ -126,7 +127,7 @@ body,
 
 .navbar {
   position: absolute;
-  z-index: -1;
+  z-index: 5;
   bottom: 1%;
   left: 0%
 }
