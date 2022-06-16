@@ -27,27 +27,11 @@ export default function About() {
           }}
         ></div> 
       </FadeIn>
-      <h1>About me</h1>
-      <p>
-        Hello! I'm currently a web developer working for Finocomp. I received a
-        Distinction Bachelor's degree in Computer Science at the University of
-        Wollongong majoring in Cyber Security. In the Autumn of 2021 I interned
-        at Finocomp 4 days a week while studying full-time and maintaining a
-        weekend job. Currently I am holding a Comptia Security+ certification.
-      </p>
-      <h3>Skills</h3>
-      would be cool if these were on some scolling LED ticker tape
-      <li>ReactJS</li>
-      <li>Typescript</li>
-      <li>Javascript</li>
-      <li>Jest Testing</li>
-      <li>Spring</li>
-      <li>Grails</li>
-      <li>Java</li>
-      <li>Groovy</li>
-      <li>Spock Testing</li>
-      <li>Kubernetes</li>
-      <Button>Resume</Button>
+
+      <div className='about-text'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+      </div>
+
       <div className='navbar'>
         <NavButton name={'Home'} destination={'/'} />
         <NavButton name={'Works'} destination={'/'} />

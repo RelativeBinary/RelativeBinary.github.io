@@ -90,6 +90,18 @@ body,
   font-size: x-large;
 }
 
+/* Home image controls
+============================== */
+.home-image {
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 250px; /* Need a specific value to work */
+}
+
 /* Theme controls
 =============================== */
 .white-content {
