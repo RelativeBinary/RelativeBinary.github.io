@@ -5,6 +5,7 @@ import FadeIn from '../components/animation/FadeIn';
 import aboutPrimary from '../images/cross-walk.png'
 import aboutSecondary from '../images/sky.png'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import '../styles/ScrollText.css';
 
 export default function About() {
    const [MousePosition, setMousePosition] = useState({
@@ -37,8 +38,19 @@ export default function About() {
       <img className='about-primary-pic' src={aboutPrimary} alt='about primary'/>
       <img className='about-secondary-pic' src={aboutSecondary} alt='about secondary'/>
 
-      <div className='about-bar scroll-left'>
-          <span>Some text <FiberManualRecordIcon/> Some text <FiberManualRecordIcon/></span>
+      <div className='about-bar m-scroll'>
+        <div>
+          <span>
+            Some text <FiberManualRecordIcon/> 
+            Some text <FiberManualRecordIcon/>
+            Some text <FiberManualRecordIcon/>
+            Some text <FiberManualRecordIcon/>
+            Some text <FiberManualRecordIcon/>
+            Some text <FiberManualRecordIcon/>
+
+          </span>
+        </div>
+          
       </div>
 
       <div className='navbar'>
