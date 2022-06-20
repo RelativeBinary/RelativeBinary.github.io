@@ -5,7 +5,7 @@ import FadeIn from '../components/animation/FadeIn';
 import aboutPrimary from '../images/cross-walk.png'
 import aboutSecondary from '../images/sky.png'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
-import '../styles/ScrollText.css';
+import Marquee from 'react-fast-marquee';
 
 export default function About() {
    const [MousePosition, setMousePosition] = useState({
@@ -28,30 +28,55 @@ export default function About() {
             left: `${MousePosition.left}px`,
             top: `${MousePosition.top}px`,
           }}
-        ></div> 
+        ></div>
       </FadeIn>
 
       <div className='about-text'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+        molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
+        fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
+        elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
+        lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
+        egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse
+        ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi
+        convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
       </div>
 
-      <img className='about-primary-pic' src={aboutPrimary} alt='about primary'/>
-      <img className='about-secondary-pic' src={aboutSecondary} alt='about secondary'/>
+      <img
+        className='about-primary-pic'
+        src={aboutPrimary}
+        alt='about primary'
+      />
+      <img
+        className='about-secondary-pic'
+        src={aboutSecondary}
+        alt='about secondary'
+      />
 
-      <div className='about-bar m-scroll'>
-        <div>
-          <span>
-            Some text <FiberManualRecordIcon/> 
-            Some text <FiberManualRecordIcon/>
-            Some text <FiberManualRecordIcon/>
-            Some text <FiberManualRecordIcon/>
-            Some text <FiberManualRecordIcon/>
-            Some text <FiberManualRecordIcon/>
-
-          </span>
-        </div>
-          
-      </div>
+      <Marquee
+        className='about-bar'
+        gradient={false}
+        pauseOnHover={true}
+        speed={80}
+      >
+        <FiberManualRecordIcon />
+        <a href='#123' className='about-bar-option'>
+          &nbsp; Linkedin &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href='#123' className='about-bar-option'>
+          &nbsp; Github &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href='#123' className='about-bar-option'>
+          &nbsp; Resume &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href='#123' className='about-bar-option'>
+          &nbsp; Twitter? &nbsp;
+        </a>
+      </Marquee>
 
       <div className='navbar'>
         <NavButton name={'Home'} destination={'/'} />
