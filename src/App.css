@@ -217,13 +217,37 @@ body,
 
 /* About controls
 =============================== */
+
+.about-text-pic-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text-wrapper {
+  border-style: dashed;
+  /* width: 100%; */
+}
+
 .about-text {
+  border-style: dashed;
   max-width: 802px;
   max-height: 315px;
 }
 
+.about-pic-wrapper { 
+  display: inline-block;
+  border-style: dashed;
+}
+
+.about-pic-wrapper > .about-primary-pic {
+  width: auto;
+  height: auto;
+  position: relative;
+  left: 20%;
+}
+
 .about-bar {
-  /* background-color: #D9D9D9; */
+  position: absolute;
   background-color: #D9D9D9;
   width: 100vw;
   height: 54px;
