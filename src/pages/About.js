@@ -52,7 +52,7 @@ export default function About() {
       </Typist>
 
       <FadeIn>
-        <img className='home-image' src={moon} alt='birds'/>
+        <img className='about-image' src={moon} alt='birds'/>
       </FadeIn>
 
       <div className="navbar">

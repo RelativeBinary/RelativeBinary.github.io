@@ -85,8 +85,7 @@ body,
 ============================== */
 .header-content {
   width: fit-content;
-  padding-top: 3%;
-  padding-left: 3%;
+  padding: 10%;
   margin-bottom: auto !important;
   font-size: x-large;
 }
@@ -226,10 +225,9 @@ body,
 
 .about-text {
   max-width: 600px;
-  padding-top: 3%;
-  padding-left: 3%;
+  padding: 10%;
   margin-bottom: auto !important;
-  font-size: x-large;
+  font-size: large;
 }
 
 .about-primary-pic {
@@ -262,13 +260,24 @@ body,
 }
 
 .about-link {
-  font-size: x-large;
   text-decoration: none;
+  font-size: large;
 }
 
 .about-link:hover {
   -webkit-text-stroke: 1px white;
   color: transparent !important;
+}
+
+.about-image {
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: auto;
+  width: 200px; /* Need a specific value to work */
 }
 
 /* About bar marquee options */
