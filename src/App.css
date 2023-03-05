@@ -1,0 +1,284 @@
+/* General
+======================== */
+:root {
+  font-family: “Playfair Display”,
+  “Didot”,
+  "Times New Roman",
+  Times,
+  serif;
+  --font-size: 16px;
+  --light-color: #4a4d4e;
+  --light-bg: #dcdcdc;
+  --light-nav: #e4e4e4;
+  --light-secondary: #e4e4e4;
+  --dark-color: #e4e4e4;
+  --dark-bg: #000000;
+  --dark-nav: #2b2b2b;
+  --dark-secondary: #2b2b2b;
+  --cursor-primary: rgba(255, 211, 191, 0.925);
+  --cursor-secondary: rgba(255, 161, 73, 0.445);
+  --cursor-third: rgb(255, 108, 40, 0.28);
+  --cursor-pulse-in-inner: 0px 0px 3px 3px;
+  --cursor-pulse-out-inner: 0px 0px 5px 5px;
+  --cursor-pulse-in-mid:0px 0px 15px 15px;
+  --cursor-pulse-out-mid:0px 0px 18px 18px;
+  --cursor-pulse-in-outer:0px 0px 65px 35px;
+  --cursor-pulse-out-outer:0px 0px 80px 50px;
+}
+
+body,
+* {
+  cursor: none;
+  margin: 0;
+  font-family: var(--font) !important;
+  font-size: var(--font-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cursor
+============================== */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 
+    var(--cursor-pulse-in-inner) var(--cursor-primary), 
+    var(--cursor-pulse-in-mid) var(--cursor-secondary),
+    var(--cursor-pulse-in-outer) var(--cursor-third);
+  }
+
+  50% {
+    box-shadow: 
+    var(--cursor-pulse-out-inner) var(--cursor-primary),
+    var(--cursor-pulse-out-mid) var(--cursor-secondary),
+    var(--cursor-pulse-out-outer) var(--cursor-third);
+  }
+
+  100% {
+    box-shadow: 
+    var(--cursor-pulse-in-inner) var(--cursor-primary),
+    var(--cursor-pulse-in-mid) var(--cursor-secondary),
+    var(--cursor-pulse-in-outer) var(--cursor-third);
+  }
+}
+
+.cursor {
+  pointer-events: none;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(255, 210, 168);
+  border-radius:100px;
+  box-shadow: 0px 0px 10px 10px var(--cursor-primary), inset 0 0 8px var(--cursor-primary);
+  animation: pulse 2s linear 1s infinite;
+  -webkit-animation: pulse 2s linear 1s infinite;
+  z-index: 10;
+}
+
+/* Body controls
+==============================*/
+.body {
+  min-height: 100vh;
+  /* border-style: dashed; */
+}
+
+/* Header controls
+============================== */
+.header-content {
+  width: fit-content;
+  padding-top: 3%;
+  padding-left: 3%;
+  margin-bottom: auto !important;
+  font-size: x-large;
+}
+
+/* Home image controls
+============================== */
+.home-image {
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 250px; /* Need a specific value to work */
+}
+
+/* Theme controls
+=============================== */
+.white-content {
+  background: var(--light-bg) !important;
+  color: var(--light-color) !important;
+}
+
+.dark-content {
+  background: var(--dark-bg);
+  color: var(--dark-color);
+}
+
+/* Navbar & Route controls
+=============================== */
+.white-content .navbar,
+.white-content a {
+  color: var(--light-color);
+}
+
+.dark-content .navbar,
+.dark-content a {
+  color: var(--dark-color);
+}
+
+.nav-flex-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  align-self: flex-end;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 5;
+  bottom: 1%;
+  left: 0%
+}
+
+/* Button controls
+=============================== */
+.white-content .button {
+  color: var(--light-color) !important;
+  text-transform: none !important;
+  font-size: var(--font-size) !important;
+}
+
+.dark-content .button {
+  color: var(--dark-color) !important;
+  text-transform: none !important;
+  font-size: var(--font-size) !important;
+}
+
+/* Typist cursor controls\
+=============================== */
+.Typist .Cursor {
+  display: inline-block;
+  font-size: x-large;
+}
+.Typist .Cursor--blinking {
+  opacity: 1;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Projects controls
+=============================== */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 10px;
+}
+
+.project-header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.project-item {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* ProjectItem controls
+=============================== */
+.white-content .ProjectCard {
+  background: var(--light-secondary);
+  color: var(--light-color);
+}
+
+.dark-content .ProjectCard {
+  background: var(--dark-secondary);
+  color: var(--dark-color);
+}
+
+/* About controls
+=============================== */
+
+.about-text-pic-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  max-width: 600px;
+  padding-top: 3%;
+  padding-left: 3%;
+  margin-bottom: auto !important;
+  font-size: x-large;
+}
+
+.about-primary-pic {
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 10;
+  right: 120px;
+  bottom: 150px;
+}
+
+.about-secondary-pic {
+  width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+    right: 250px;
+    bottom: 350px;
+}
+
+.about-bar {
+  position: fixed;
+  top: 700px;
+  background-color: #D9D9D9;
+  width: 100vw;
+  height: 54px;
+  font-size: large;
+  text-decoration: none;
+  color: #9A9A9A;
+}
+
+.about-link {
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent !important;
+}
+
+/* About bar marquee options */
+.about-bar-option {
+  font-size: 40px;
+  text-decoration: none;
+  color: #9A9A9A !important;
+}
+
+.about-bar-option:hover {
+  -webkit-text-stroke: 1px #9A9A9A;
+  color: transparent !important;
+}
