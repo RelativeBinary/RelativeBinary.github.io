@@ -1,11 +1,10 @@
-import React from 'react';
-import NavButton from '../components/NavButton';
-import { useState } from 'react';
-import FadeIn from '../components/animation/FadeIn';
-import aboutPrimary from '../images/cross-walk.png';
-import aboutSecondary from '../images/sky.png';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import React, { useState } from "react";
+import Typist from "react-typist";
+import NavButton from "../components/NavButton";
+import FadeIn from "../components/animation/FadeIn";
+import moon from '../images/moon.jpg';
 import Marquee from 'react-fast-marquee';
+import FiberManualRecordIcon from "react-fast-marquee";
 
 export default function About() {
   const [MousePosition, setMousePosition] = useState({
@@ -19,67 +18,46 @@ export default function About() {
   };
 
   return (
-    <div onMouseMove={(ev) => handleMouseMove(ev)} className='body'>
+    <div onMouseMove={(ev) => handleMouseMove(ev)} className="body">
       <FadeIn>
         <div
-          className='cursor'
+          className="cursor"
           style={{
-            position: 'absolute',
+            position: "absolute",
             left: `${MousePosition.left}px`,
             top: `${MousePosition.top}px`,
           }}
         ></div>
       </FadeIn>
-        <div className='about-text'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-          egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.
-          Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum
-          lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in
-          elementum tellus.
-        </div>
-      <img
-        className='about-primary-pic'
-        src={aboutPrimary}
-        alt='about primary'
-      />
-      <img
-        className='about-secondary-pic'
-        src={aboutSecondary}
-        alt='about secondary'
-      />
-      <Marquee
-        className='about-bar'
-        gradient={false}
-        pauseOnHover={true}
-        speed={80}
-      >
-        <FiberManualRecordIcon />
-        <a href='#123' className='about-bar-option'>
-          &nbsp; Linkedin &nbsp;
-        </a>
-        <FiberManualRecordIcon />
-        <a href='#123' className='about-bar-option'>
+      <Typist className="about-text" avgTypingDelay={40}>
+        My primary intention of this site was more to explore the art style of a 
+        particular playstation 2 video game, hope you can guess it.
+        <Typist.Delay ms={500} />
+        <br />
+        <br />
+        Feel free to check out my  
+        <a href="https://github.com/RelativeBinary" target="_blank" className="about-link">
           &nbsp; Github &nbsp;
-        </a>
-        <FiberManualRecordIcon />
-        <a href='#123' className='about-bar-option'>
-          &nbsp; Resume &nbsp;
-        </a>
-        <FiberManualRecordIcon />
-        <a href='#123' className='about-bar-option'>
-          &nbsp; Twitter? &nbsp;
-        </a>
-      </Marquee>
+        </a> 
+        / 
+        <a href="https://www.linkedin.com/in/patrick-bornay-2ab4b013b/" target="_blank" className="about-link">
+          &nbsp; Linkedin &nbsp;
+        </a> 
+        for all the things,
+        <Typist.Delay ms={1000} /> professionally speaking...
+        <br />
+        <br />
+        <Typist.Delay ms={1500} />
+        Thanks for stopping by ❤️
+      </Typist>
 
-      <div className='navbar'>
-        <NavButton name={'Home'} destination={'/'} />
-        <NavButton name={'Works'} destination={'/'} />
-        <NavButton name={'About'} destination={'/'} active={true} />
+      <FadeIn>
+        <img className='home-image' src={moon} alt='birds'/>
+      </FadeIn>
+
+      <div className="navbar">
+        <NavButton name={"Home"} destination={"/"} />
+        <NavButton name={"About"} destination={"/"} active={true} />
       </div>
     </div>
   );

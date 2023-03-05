@@ -4,8 +4,8 @@ import Typist from 'react-typist';
 export default function Header() {
 
   return (
-    <div className='Header'>
-      <Typist className='HeaderContent'>
+    <div className='header'>
+      <Typist className='header-content'>
         Hi! I'm Patrick. <br />
         <Typist.Delay ms={1000} />A web design & development <br /> 
         enthusiast.

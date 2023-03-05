@@ -83,7 +83,7 @@ body,
 
 /* Header controls
 ============================== */
-.HeaderContent {
+.header-content {
   width: fit-content;
   padding-top: 3%;
   padding-left: 3%;
@@ -184,7 +184,7 @@ body,
 
 /* Projects controls
 =============================== */
-.Projects {
+.project {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
@@ -193,12 +193,12 @@ body,
   padding: 10px;
 }
 
-.ProjectsHeader {
+.project-header {
   text-align: center;
   padding-top: 20px;
 }
 
-.ProjectItem {
+.project-item {
   width: 50%;
   padding: 10px;
   box-sizing: border-box;
@@ -225,11 +225,11 @@ body,
 }
 
 .about-text {
-  position: fixed;
-  font-size: 30px;
-  max-width: 802px;
-  top: 150px;
-  left: 150px;
+  max-width: 600px;
+  padding-top: 3%;
+  padding-left: 3%;
+  margin-bottom: auto !important;
+  font-size: x-large;
 }
 
 .about-primary-pic {
@@ -261,6 +261,17 @@ body,
   color: #9A9A9A;
 }
 
+.about-link {
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent !important;
+}
+
+/* About bar marquee options */
 .about-bar-option {
   font-size: 40px;
   text-decoration: none;

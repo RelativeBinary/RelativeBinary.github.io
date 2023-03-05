@@ -8,26 +8,6 @@ export default function Navbar() {
   // const [darkMode, setDarkMode] = React.useState(true);
   return (
     <div className='navbar'>
-      {/* 
-        As a memory refresher what were doing here is creating a context consumer
-        which will access a function 'changeTheme' inside context. This component
-        also is able to access the context's theme.
-      */}
-      {/* <ThemeContext.Consumer>
-        {({ changeTheme }) => (
-          <BasicGrow delay={10000}>
-            <Button
-              className='button'
-              onClick={() => {
-                setDarkMode(!darkMode);
-                changeTheme(darkMode ? themes.light : themes.dark);
-              }}
-            >
-              Toggle
-            </Button>
-          </BasicGrow>
-        )}
-      </ThemeContext.Consumer> */}
       <BasicGrow delay={10500}>
         <Typography>
           <Link to='/' className='nav-link'>

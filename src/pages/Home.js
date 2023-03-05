@@ -37,7 +37,7 @@ export default function Home() {
 
       <div className='navbar'>
        <NavButton name={'Home'} destination={'/'} active={true}/> 
-       <NavButton name={'Works'} destination={'/works'}/> 
+       {/* <NavButton name={'Works'} destination={'/works'}/>  */}
        <NavButton name={'About'} destination={'/about'}/> 
       </div>
     </div>

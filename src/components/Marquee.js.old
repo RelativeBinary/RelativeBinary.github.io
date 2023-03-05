@@ -1,0 +1,71 @@
+  <Marquee
+        className="about-bar"
+        gradient={false}
+        pauseOnHover={true}
+        speed={80}
+      >
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Linkedin &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Github &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Resume &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Twitter? &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Linkedin &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Github &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Resume &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Twitter? &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Linkedin &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Github &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Resume &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Twitter? &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Linkedin &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Github &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Resume &nbsp;
+        </a>
+        <FiberManualRecordIcon />
+        <a href="#123" className="about-bar-option">
+          &nbsp; Twitter? &nbsp;
+        </a>
+      </Marquee>
