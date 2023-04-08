@@ -30,7 +30,7 @@ export default function About() {
         ></div>
       </FadeIn>
       <Typist className='about-text' avgTypingDelay={40}>
-        My primary intention for this site was to explore the art style of a
+        The primary intention for this site was to explore the art style of a
         particular playstation 2 video game, hope you can guess it.
         <Typist.Delay ms={500} />
         <br />
